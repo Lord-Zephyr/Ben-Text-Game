@@ -25,11 +25,11 @@ def dungeon():
         print("A vile stench enters your nose.")
         print("Maybe I shouldn't have gone in here.")
         back = input("Turn back? (y/n) ")
-        if back.lower == 'y':
+        if back.lower() == 'y':
             print("You continue forward.")
             print("Eventually you come across a door with light peering out from beneath it.")
             door = input("Open the door? (y/n): ")
-            if door.lower == 'y':
+            if door.lower() == 'y':
                 print("You open the door.")
                 print("The light blinds you.")
                 print("You walk towards the light.")
@@ -47,7 +47,7 @@ def dungeon():
                 print("Thank you for playing :)")
                 play_again()
 
-            elif door.lower == 'n':
+            elif door.lower() == 'n':
                 print("You decide whatever is in here isn't worth it.")
                 print("You head home.")
                 play_again()
@@ -56,7 +56,7 @@ def dungeon():
                 play_again()
 
 
-        elif back.lower == 'n':
+        elif back.lower() == 'n':
             print("You decide whatever is in here isn't worth it.")
             print("You head home.")
             play_again()
@@ -148,7 +148,7 @@ def main():
                         print("Your dagger has broken.")
                     print("Player health: " + str(player_health))
                     rest = input("Would you like to rest? (y/n) ")
-                    if rest.lower == 'y':
+                    if rest.lower() == 'y':
                         print("You attempt to rest.")
                         luck = random.randrange(1,20)
                         print("Rolling for luck: " + str(luck))
