@@ -85,6 +85,9 @@ def main():
         print("Option 2: Move on")
         print("Option 3: Bury it")
         option = int(input("What do you do? (1/2/3): "))
+    if option != {1, 2, 3}:
+        print("Yeah buddy learn to use a computer you fuck")
+        play_again()
     else:
         print("Bruh you're dumb")
         play_again()
@@ -175,6 +178,22 @@ def main():
                             else:
                                 print("If you can't press a simple y or n you don't deserve to continue :)")
                                 play_again()
+                    elif rest.lower() == 'n':
+                        print("You notice a trap door in the ground.")
+                        trap_door = input("Would you like to enter? (y/n): ")
+                        if trap_door.lower() == 'y':
+                            dungeon()
+                        elif trap_door.lower() == 'n':
+                            print("Guess you don't feel adventurous today.")
+                            print("You head home.")
+                            play_again()
+                        else:
+                            print("If you can't press a simple y or n you don't deserve to continue :)")
+                            play_again()
+                    else:
+                        print("it's really not that hard")
+                        play_again()
+
 
                     
             elif dagger.lower() == 'n':
@@ -267,9 +286,6 @@ def main():
             elif fight_or_flight != {'f', 'r'}: 
                 print("yeah that's not f or r")
                 play_again()
-    if option != {1, 2, 3}:
-        print("Yeah buddy learn to use a computer you fuck")
-        play_again()
 
 main()
             
