@@ -19,12 +19,12 @@ def play_again():
 # dungeon
 def dungeon():
     print("You open the trap door to discover a dark cellar.")
-    sure = input("Are you sure you want to continue?")
+    sure = input("Are you sure you want to continue? (y/n) ")
     if sure.lower() == 'y':
         print("You feel brave today. Maybe too brave.")
         print("A vile stench enters your nose.")
         print("Maybe I shouldn't have gone in here.")
-        back = input("Turn back? (y/n) ")
+        back = input("Keep going? (y/n) ")
         if back.lower() == 'y':
             print("You continue forward.")
             print("Eventually you come across a door with light peering out from beneath it.")
