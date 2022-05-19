@@ -162,12 +162,12 @@ def main():
                             print("You manage to sleep through the night.")
                             heal = random.randrange(1,10)
                             print("Rolling for heal: ")
-                            print("Health restored: " + str(heal))     
+                            print("Health restored: " + str(heal)) 
+                            player_health += heal    
                             print("You notice a trap door in the ground.")
                             trap_door = input("Would you like to enter? (y/n): ")
                             if trap_door.lower() == 'y':
-                                print("wip")
-                                # implement dungeon?
+                                dungeon()
                             elif trap_door.lower() == 'n':
                                 print("Guess you don't feel adventurous today.")
                                 print("You head home.")
